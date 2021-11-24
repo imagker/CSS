@@ -1,0 +1,79 @@
+/* p{
+      line-height: 1.5rem;
+} */
+
+.TipBox {
+      display: block;
+      width: 70%;
+      padding:1rem;
+      background-color: #FFFFCC;
+      }
+
+.Bold {
+      font-weight: bold;
+      }
+
+.RedGray {
+      background-color: rgb(233, 230, 230);
+      /* padding-bottom: 0.1rem;
+      padding-top: 0.1rem; */
+      padding-left: 0.1rem;
+      padding-right: 0.1rem;
+      color: red;
+      }
+
+a:link {
+      color: rgb(0, 187, 0);
+      background-color: transparent;
+      text-decoration: none;
+}
+
+a:visited{
+      color: rgb(0, 187, 0);
+      background-color: transparent;
+      text-decoration: overline;
+}
+
+a:hover{
+      color: crimson;
+      background-color: transparent;
+      text-decoration: wave;
+}
+
+a:active{
+      color:yellowgreen;
+      background-color: transparent;
+      text-decoration: underline;
+}
+
+.Ex {
+
+      color: royalblue;
+}
+.EX {
+      padding: 0.3%;
+      border: 1px solid black;
+      color: royalblue;
+}
+
+
+#APLE {
+      width: 450;
+      height: 675;
+}
+
+table {
+      border: 1px solid #dddddd;;
+      border-collapse: collapse;
+      width: 50%;
+}
+
+td, th {
+      border: 0px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+}
+
+tr:nth-child(even) {
+      background-color: #dddddd;
+}
