@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CSS Selectors</title>
+  <link href="/CSS/CSS/styles.css" rel="stylesheet">
+  <link href="/HTML/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(175, 175, 255);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">CSS Selectors</a>
+      </li>
+      <li class="li">
+        <a href="#T2">The CSS element Selector</a>
+      </li>
+      <li class="li">
+        <a href="#T3">The CSS id Selector</a>
+      </li>
+      <li class="li">
+        <a href="#T4">The CSS class Selector</a>
+      </li>
+      <li class="li">
+        <a href="#T5">The CSS Universal Selector</a>
+      </li>
+      <li class="li">
+        <a href="#T6">The CSS Grouping Selector</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/css/css_selectors.asp">CSS Selectors</a></h1>
+      </header>
+      <p>A CSS selector selects the HTML element(s) you want to style.
+        <br><br>
+        CSS selectors are used to "find" (or select) the HTML elements you want to style.
+        <br><br>
+        We can divide CSS selectors into five categories:
+        <ul>
+          <li>Simple selectors (select elements based on name, id, class)</li>
+          <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+          <li>Pseudo-class selectors (select elements based on a certain state)</li>
+          <li>Pseudo-elements selectors (select and style a part of an element)</li>
+          <li>Attribute selectors (select elements based on an attribute or attribute value)</li>
+        </ul>
+        This page will explain the most basic CSS selectors.
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">The CSS element Selector</h2>
+      </header>
+      <p>The element selector selects HTML elements based on the element name.</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T3">The CSS id Selector</h2>
+      </header>
+      <p>The id selector uses the id attribute of an HTML element to select a specific element.
+      <br><br>
+      The id of an element is unique within a page, so the id selector is used to select one unique element!
+      <br><br>
+      To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+      <br>
+      <span class="TipBox">
+        <strong>Note:</strong> Note: An id name cannot start with a number!
+      </span>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">The CSS class Selector</h2>
+      </header>
+      <p>The class selector selects HTML elements with a specific class attribute.
+      <br><br>
+      To select elements with a specific class, write a period (.) character, followed by the class name.
+      <br><br>
+      <span class="EX">.center { }</span>
+      <br><br><br>
+      You can also specify that only specific HTML elements should be affected by a class.
+      <br><br>
+      <span class="EX">p.center { }</span>
+      <br><br><br>
+      HTML elements can also refer to more than one class.
+      <br><br>
+      <span class="EX">&lt;p class="center large"&gt;This paragraph refers to two classes.&lt;/p&gt;</span>
+      </p>
+      
+
+      <span class="TipBox">
+        <strong>Note:</strong> Note: An class name cannot start with a number!
+      </span>
+    </section>
+    <section>
+      <header>
+        <h2 id="T5">The CSS Universal Selector</h2>
+      </header>
+      <p>The universal selector (*) selects all HTML elements on the page.</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T6">The CSS Grouping Selector</h2>
+      </header>
+      <p>The grouping selector selects all the HTML elements with the same style definitions.
+        <br><br>
+        To group selectors, separate each selector with a comma.
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

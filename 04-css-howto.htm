@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>How To Add CSS</title>
+  <link href="/CSS/CSS/styles.css" rel="stylesheet">
+  <link href="/HTML/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(175, 175, 255);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">How To Add CSS</a>
+      </li>
+      <li class="li">
+        <a href="#T2">External CSS</a>
+      </li>
+      <li class="li">
+        <a href="#T3">Internal CSS</a>
+      </li>
+      <li class="li">
+        <a href="#T4">Inline CSS</a>
+      </li>
+      <li class="li">
+        <a href="#T5">Multiple Style Sheets</a>
+      </li>
+      <li class="li">
+        <a href="#T6">Cascading Order</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/css/css_howto.asp">How To Add CSS</a></h1>
+      </header>
+      <p>When a browser reads a style sheet, it will format the HTML document according to the information in the style
+        sheet.
+        <br>
+      <h3>Three Ways to Insert CSS</h3>
+      <ul>
+        <li>External CSS</li>
+        <li>Internal CSS</li>
+        <li>Inline CSS</li>
+      </ul>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">External CSS</h2>
+      </header>
+      <p>With an external style sheet, you can change the look of an entire website by changing just one file!
+      <br><br>
+      Each HTML page must include a reference to the external style sheet file inside the &lt;link&gt; element, inside the head section.</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T3">Internal CSS</h2>
+      </header>
+      <p>description</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">Inline CSS</h2>
+      </header>
+      <p>description</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T5">Multiple Style Sheets</h2>
+      </header>
+      <p>description</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T6">Cascading Order</h2>
+      </header>
+      <p>description</p>
+    </section>
+  </main>
+</body>
+
+</html>

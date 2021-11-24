@@ -23,13 +23,13 @@
       }
 
 a:link {
-      color: rgb(0, 187, 0);
+      color: rgb(175, 175, 255);;
       background-color: transparent;
       text-decoration: none;
 }
 
 a:visited{
-      color: rgb(0, 187, 0);
+      color: rgb(175, 175, 255);;
       background-color: transparent;
       text-decoration: overline;
 }
@@ -41,7 +41,7 @@ a:hover{
 }
 
 a:active{
-      color:yellowgreen;
+      color:rgb(175, 175, 255);;
       background-color: transparent;
       text-decoration: underline;
 }

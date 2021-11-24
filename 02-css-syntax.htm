@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CSS Syntax</title>
+  <link href="/HTML/CSS/styles.css" rel="stylesheet">
+  <link href="/HTML/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(175, 175, 255);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">CSS Syntax</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/css/css_syntax.asp">CSS Syntax</a></h1>
+      </header>
+      <p>A CSS rule consists of a selector and a declaration block.
+        <br><br>
+        <img src="/CSS/images/img_selector.gif" alt="css_syntax">
+        <br><br>
+        The selector points to the HTML element you want to style.
+        <br><br>
+        The declaration block contains one or more declarations separated by semicolons.
+        <br><br>
+        Each declaration includes a CSS property name and a value, separated by a colon.
+        <br><br>
+        Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
+      </p>
+    </section>
+</body>
+
+</html>
