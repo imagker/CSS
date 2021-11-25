@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Document</title>
+  <title>CSS Background Shorthand</title>
   <link href="/CSS/CSS/styles.css" rel="stylesheet">
   <link href="/CSS/images/favicon.ico" rel="shortcut icon">
   <style>
@@ -50,7 +50,7 @@
   <nav>
     <ul class="ul">
       <li class="li">
-        <a href="#T1">title1</a>
+        <a href="#T1">CSS Background Shorthand</a>
       </li>
       <li class="li">
         <a href="#T2">title2</a>
@@ -66,9 +66,37 @@
   <main>
     <section>
       <header>
-        <h1 id="T1"><a href="">Title1</a></h1>
+        <h1 id="T1"><a href="https://www.w3schools.com/css/css_background_shorthand.asp">CSS Background - Shorthand Property</a></h1>
       </header>
-      <p>description</p>
+      <p>
+        To shorten the code, it is also possible to specify all the background properties in one single property. This is called
+        a shorthand property.
+        <br><br>
+        Instead of writing: <br>
+        <div style="color: cornflowerblue;">
+        body { <br>
+          &nbsp;&nbsp;background-color: #ffffff; <br>
+          &nbsp;&nbsp;background-image: url("img_tree.png");<br>
+          &nbsp;&nbsp;background-repeat: no-repeat;<br>
+          &nbsp;&nbsp;background-position: right top;<br>
+        }
+        </div><br><br>
+        You can use the shorthand property <span class="RedGray">background</span>: <br><br>
+        <div style="color: rgb(12, 69, 175);">
+          body {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;background: #ffffff url("img_tree.png") no-repeat right top;<br>
+          }
+        </div><br>
+        When using the shorthand property the order of the property values is:
+        <ul>
+          <li><span class="RedGray">background-color</span></li>
+          <li><span class="RedGray">background-image</span></li>
+          <li><span class="RedGray">background-repeat</span></li>
+          <li><span class="RedGray">background-attachment</span></li>
+          <li><span class="RedGray">background-position</span></li>
+        </ul>
+        It does not matter if one of the property values is missing, as long as the other ones are in this order.
+      </p>
     </section><br><br>
     <section>
       <header>

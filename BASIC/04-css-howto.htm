@@ -91,31 +91,63 @@
       </header>
       <p>With an external style sheet, you can change the look of an entire website by changing just one file!
       <br><br>
-      Each HTML page must include a reference to the external style sheet file inside the &lt;link&gt; element, inside the head section.</p>
+      Each HTML page must include a reference to the external style sheet file inside the &lt;link&gt; element, inside the head section.
+      <br><br>
+      An external style sheet can be written in any text editor, and must be saved with a .css extension. 
+      <br><br>
+      The external .css file should not contain any HTML tags.
+      <br><br>
+      <span class="TipBox"><strong>Note:</strong> Do not add a space between the property value and the unit (such as margin-left: 20 px;). The correct way is:
+      margin-left: 20px;</span>
+    </p>
     </section><br><br>
     <section>
       <header>
         <h2 id="T3">Internal CSS</h2>
       </header>
-      <p>description</p>
+      <p>
+        An internal style sheet may be used if one single HTML page has a unique style.
+        <br><br>
+        The internal style is defined inside the &lt;style&gt; element, inside the head section.
+      </p>
     </section><br><br>
     <section>
       <header>
         <h2 id="T4">Inline CSS</h2>
       </header>
-      <p>description</p>
+      <p>
+        An inline style may be used to apply a unique style for a single element.
+        <br><br>
+        To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+        <br><br>
+        <span class="TipBox"><strong>Tip:</strong> An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method
+        sparingly.</span>
+      </p>
     </section><br><br>
     <section>
       <header>
         <h2 id="T5">Multiple Style Sheets</h2>
       </header>
-      <p>description</p>
+      <p>
+        If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.
+      </p>
     </section><br><br>
     <section>
       <header>
         <h2 id="T6">Cascading Order</h2>
       </header>
-      <p>description</p>
+      <p>
+        What style will be used when there is more than one style specified for an HTML element?
+        <br><br>
+        All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has
+        the highest priority:
+        <ul>
+        <li>Inline style (inside an HTML element)</li> 
+        <li>External and internal style sheets (in the head section)</li> 
+        <li>Browser default</li> 
+        </ul>
+        So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+      </p>
     </section>
   </main>
 </body>

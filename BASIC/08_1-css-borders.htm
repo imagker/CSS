@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CSS Borders</title>
+  <link href="/CSS/CSS/styles.css" rel="stylesheet">
+  <link href="/CSS/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(175, 175, 255);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">CSS Borders</a>
+      </li>
+      <li class="li">
+        <a href="#T2">CSS Border Style</a>
+      </li>
+      <li class="li">
+        <a href="#T3">title3</a>
+      </li>
+      <li class="li">
+        <a href="#T4">title4</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/css/css_border.asp">CSS Borders</a></h1>
+      </header>
+      <p>
+        The CSS border properties allow you to specify the style, width, and color of an element's border.
+        <hr>
+        <div style="border: 2px solid black; padding: 1rem;">I have borders on all sides</div>
+        <br><br>
+        <div style="border-bottom: 2px solid red; padding: 1rem;">I have a red bottom border</div>
+        <br><br>
+        <div style="border: 1px solid black; border-radius: 10px; padding: 1rem;">I have rounded border</div>
+        <br><br>
+        <div style="border-left: 5px solid blue; background-color: rgb(176, 255, 255); padding: 1rem;">I have a blue left border</div>
+        <br><br>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">CSS Border Style</h2>
+      </header>
+      <p>
+        <style>
+          p.dotted {
+            border-style: dotted;
+          }
+        
+          p.dashed {
+            border-style: dashed;
+          }
+        
+          p.solid {
+            border-style: solid;
+          }
+        
+          p.double {
+            border-style: double;
+          }
+        
+          p.groove {
+            border-style: groove;
+          }
+        
+          p.ridge {
+            border-style: ridge;
+          }
+        
+          p.inset {
+            border-style: inset;
+          }
+        
+          p.outset {
+            border-style: outset;
+          }
+        
+          p.none {
+            border-style: none;
+          }
+        
+          p.hidden {
+            border-style: hidden;
+          }
+        
+          p.mix {
+            border-style: dotted dashed solid double;
+          }
+        </style>
+        </head>
+        
+        <body>
+        The border-style property specifies what kind of border to display.
+        
+        The following values are allowed:
+        <ul style="line-height: 1.5rem;">
+        <li><span class="RedGray">dotted</span> - Defines a dotted border</li>
+        <li><span class="RedGray">dashed</span> - Defines a dashed border</li>
+        <li><span class="RedGray">solid</span> - Defines a solid border</li>
+        <li><span class="RedGray">double</span> - Defines a double border</li>
+        <li><span class="RedGray">groove</span> - Defines a 3D grooved border. The effect depends on the border-color value</li>
+        <li><span class="RedGray">ridge</span> - Defines a 3D ridged border. The effect depends on the border-color value</li>
+        <li><span class="RedGray">inset</span> - Defines a 3D inset border. The effect depends on the border-color value</li>
+        <li><span class="RedGray">outset</span> - Defines a 3D outset border. The effect depends on the border-color value</li>
+        <li><span class="RedGray">none</span> - Defines no border</li>
+        <li><span class="RedGray">hidden</span> - Defines a hidden border</li>
+        </ul>
+        <br>
+        The <span class="RedGray">border-style</span> property can have from one to four values (for the top border, right border, bottom border, and the
+        left border).
+
+          <h3>The border-style Property</h3>
+          <p>This property specifies what kind of border to display:</p>
+        
+          <p class="dotted">A dotted border.</p>
+          <p class="dashed">A dashed border.</p>
+          <p class="solid">A solid border.</p>
+          <p class="double">A double border.</p>
+          <p class="groove">A groove border.</p>
+          <p class="ridge">A ridge border.</p>
+          <p class="inset">An inset border.</p>
+          <p class="outset">An outset border.</p>
+          <p class="none">No border.</p>
+          <p class="hidden">A hidden border.</p>
+          <p class="mix">A mixed border.</p>
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>
