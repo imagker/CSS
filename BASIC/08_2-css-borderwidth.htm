@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CSS Border Width</title>
+  <link href="/CSS/CSS/styles.css" rel="stylesheet">
+  <link href="/CSS/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(175, 175, 255);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">CSS Border Width</a>
+      </li>
+      <li class="li">
+        <a href="#T2">Specific Side Widths</a>
+      </li>
+      <li class="li">
+        <a href="#T3">title3</a>
+      </li>
+      <li class="li">
+        <a href="#T4">title4</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/css/css_border_width.asp">CSS Border Width</a></h1>
+      </header>
+      <p>
+        The <span class="RedGray">border-width</span> property specifies the width of the four borders.
+        <br><br>
+        The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">Specific Side Widths</h2>
+      </header>
+      <p style="border-style: groove ; border-width: 5px 20px 10px ;">
+        The <span class="RedGray">border-width</span> property can have from one to four values (for the top border, right border, bottom border, and the left border)
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

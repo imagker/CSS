@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CSS Shorthand Border Property</title>
+  <link href="/CSS/CSS/styles.css" rel="stylesheet">
+  <link href="/CSS/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(175, 175, 255);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">CSS Shorthand Border Property</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="">CSS Shorthand Border Property</a></h1>
+      </header>
+      <p>
+        Like you saw in the previous page, there are many properties to consider when dealing with borders.
+        <br><br>
+        To shorten the code, it is also possible to specify all the individual border properties in one property.
+        <br><br>
+        The <span class="RedGray">border</span> property is a shorthand property for the following individual border properties:
+        <ul style="line-height: 1.5rem;">
+          <li><span class="RedGray">border-width</span></li>
+          <li><span class="RedGray">border-style</span> (required)</li>
+          <li><span class="RedGray">border-color</span></li>
+        </ul><br>
+        <pre class="EX">
+          p { 
+            border: 5px solid red;
+          }
+        </pre>
+      </p>
+    </section><br><br>
+  </main>
+</body>
+
+</html>

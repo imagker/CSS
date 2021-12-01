@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CSS Margins</title>
+  <link href="/CSS/CSS/styles.css" rel="stylesheet">
+  <link href="/CSS/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(175, 175, 255);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">CSS Margins</a>
+      </li>
+      <li class="li">
+        <a href="#T2">Margin - Individual Sides</a>
+      </li>
+      <li class="li">
+        <a href="#T3">The auto Value</a>
+      </li>
+      <li class="li">
+        <a href="#T4">title4</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/css/css_margin.asp">CSS Margins</a></h1>
+      </header>
+      <p>
+        Margins are used to create space around elements, outside of any defined borders.
+        <br><br>
+        <span style="border: 2px solid green;" >IM JUST A BOX</span><span style="border: 2px solid green; margin: 0px 0px 0px 70px;">this element has a margin (left) of 70px.</span> <br><br><br>
+
+        The CSS <span class="RedGray">margin</span> properties are used to create space around elements, outside of any defined borders.
+        <br><br>
+        With CSS, you have full control over the margins. There are properties for setting the margin for each side of an
+        element (top, right, bottom, and left).
+
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">Margin - Individual Sides</h2>
+      </header>
+      <p>CSS has properties for specifying the margin for each side of an element:
+      <br><br>
+      <ul>
+        <li><code class="RedGray">margin-top</code></li>
+        <li><code class="RedGray">margin-right</code></li>
+        <li><code class="RedGray">margin-bottom</code></li>
+        <li><code class="RedGray">margin-left</code></li>
+      </ul> <br>
+      All the margin properties can have the following values:
+      <ul>
+        <li>auto - the browser calculates the margin</li>
+        <li>length - specifies a margin in px, pt, cm, etc.</li>
+        <li>% - specifies a margin in % of the width of the containing element</li>
+        <li>inherit - specifies that the margin should be inherited from the parent element</li>
+      </ul>
+      <strong>Tip:</strong> Negative values are allowed.</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T3">The auto Value</h2>
+      </header>
+      <p>You can set the margin property to <span class="RedGray">auto</span> to horizontally center the element within its container.
+      <br><br>
+      The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.
+    <br><br>
+    <div style="width: 100px; margin:auto; border: 1px solid red;">12321</div>
+    </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">The inherit Value</h2>
+      </header>
+      <p>
+        This example lets the left margin of the &lt;p class="ex1"&gt; element be inherited from the parent element (&lt;div&gt;):
+        
+        <div>
+          <p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+        </div>
+        <style>
+          div {
+            border: 1px solid red;
+            margin-left: 100px;
+          }
+        
+          p.ex1 {
+            margin-left: inherit;
+          }
+        </style>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">CSS Margin Collapse</h2>
+      </header>
+      <p>
+        Sometimes two margins collapse into a single margin. 
+        <br><br>
+        <span class="RedGray">Top and bottom</span> margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.
+        <br><br>
+        This does not happen on left and right margins! Only <span class="RedGray">Top and bottom</span> margins!
+        
+        In the example above, the &lt;h1&gt; element has a bottom margin of 50px and the &lt;h2&gt; element has a top margin set to 20px.
+        <br><br>
+        <style>
+          h1 {
+            margin: 0 0 50px 0;
+          }
+        
+          h2 {
+            margin: 20px 0 0 0;
+          }
+        </style>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <br>
+        Common sense would seem to suggest that the vertical margin between the &lt;h1&gt; and the &lt;h2&gt; would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px.
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

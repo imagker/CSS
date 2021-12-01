@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CSS Border Color</title>
+  <link href="/CSS/CSS/styles.css" rel="stylesheet">
+  <link href="/CSS/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(175, 175, 255);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">CSS Border Color</a>
+      </li>
+      <li class="li">
+        <a href="#T2">Specific Side Colors</a>
+      </li>
+      
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="">CSS Border Color</a></h1>
+      </header>
+      <p>
+        The <span class="RedGray">border-color</span>  property is used to set the color of the four borders.
+        <br><br>
+        The color can be set by:
+        <ul>
+          <li>name - specify a color name, like "red"</li>
+          <li>HEX - specify a HEX value, like "#ff0000"</li>
+          <li>RGB - specify a RGB value, like "rgb(255,0,0)"</li>
+          <li>HSL - specify a HSL value, like "hsl(0, 100%, 50%)"</li>
+          <li>transparent</li>
+        </ul><br>
+        <strong>Note:</strong> If <span class="RedGray">border-color</span> is not set, it inherits the color of the element.
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">Specific Side Colors</h2>
+      </header>
+      <p>
+        The <span class="RedGray">border-color</span> property can have from one to four values (for the top border, right border, bottom border, and the left border).
+      </p>
+    </section><br><br>
+   
+  </main>
+</body>
+
+</html>

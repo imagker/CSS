@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CSS Height and Width</title>
+  <link href="/CSS/CSS/styles.css" rel="stylesheet">
+  <link href="/CSS/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(175, 175, 255);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">CSS Height and Width</a>
+      </li>
+      <li class="li">
+        <a href="#T2">CSS Setting height and width</a>
+      </li>
+      <li class="li">
+        <a href="#T3">Setting max-width</a>
+      </li>
+      <li class="li">
+        <a href="#T4">title4</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/css/css_dimension.asp">CSS Height and Width</a></h1>
+      </header>
+      <p>
+        The CSS <span class="RedGray">height</span> and <span class="RedGray">width</span> properties are used to set the height and width of an element.
+        <br><br>
+        The CSS <span class="RedGray">max-width</span> property is used to set the maximum width of an element.
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">CSS Setting height and width</h2>
+      </header>
+      <p>The <span class="RedGray">height</span> and <span class="RedGray">width</span> properties are used to set the height and width of an element.
+      <br><br>
+      The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element.
+      <br><br>
+      The <span class="RedGray">height</span> and <span class="RedGray">width</span> properties may have the following values:
+      <ul>
+        <li><code class="RedGray">auto</code></li> - This is default. The browser calculates the height and width
+        <li><code class="RedGray">length</code></li> - Defines the height/width in px, cm etc.
+        <li><code class="RedGray">%</code></li> - Defines the height/width in percent of the containing block
+        <li><code class="RedGray">initial</code></li> - Sets the height/width to its default value
+        <li><code class="RedGray">inherit</code></li> - The height/width will be inherited from its parent value
+        
+      </ul>
+    </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T3">Setting max-width</h2>
+      </header>
+      <p>
+        The <span class="RedGray">max-width</span> property is used to set the maximum width of an element.
+        <br><br>
+        The <span class="RedGray">max-width</span> can be specified in length values, like px, cm, etc., or in percent (%) of the containing block, or set to none (this is default. Means that there is no maximum width).
+        <br><br>
+        The problem with the &lt;div&gt; above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.
+        <br><br>
+        Using <span class="RedGray">max-width</span> instead, in this situation, will improve the browser's handling of small windows.
+        <br><br>
+        <div style="max-width: 1000px; height: 100px; background-color: green; color: white; padding: 10px;"><br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste et soluta non, totam deserunt sit amet consectetur sit perspiciatis? </div>
+        <br>
+        <strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between the divs!
+        <br><br>
+        <strong>Note:</strong>If you for some reason use both the <span class="RedGray">width</span> property and the <span class="RedGray">max-width</span> property on the same element, and the value of the <span class="RedGray">width</span> property is larger than the <span class="RedGray">max-width</span> property; the <span class="RedGray">max-width</span> property will be used (and the <span class="RedGray">width</span> property will be ignored).
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">title4</h2>
+      </header>
+      <p>description</p>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CSS Box Model</title>
+  <link href="/CSS/CSS/styles.css" rel="stylesheet">
+  <link href="/CSS/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(175, 175, 255);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+    /* html {box-sizing:border-box} 
+    *,*:before,*:after{box-sizing:inherit;} */
+    
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">CSS Box Model</a>
+      </li>
+      <li class="li">
+        <a href="#T2">Width and Height of an Element</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/css/css_boxmodel.asp">CSS Box Model</a></h1>
+      </header>
+      <p>
+        All HTML elements can be considered as boxes.
+        <br><br>
+        In CSS, the term "box model" is used when talking about design and layout.
+        <br><br>
+        The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+        <style>
+          .margin { background-color: gray; width:100px; height: 100px;}
+          .border { background-color: green; width:100px; height: 100px;}
+          .padding { background-color: gray; width:100px; height: 100px;}
+          .content { background-color: white; width:100px; height: 100px;}
+        </style>
+        <div class="boxmodel">
+          <div class="margin">
+            <div class="border">
+              <div class="padding">
+                <div class="content"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <style>
+          
+          *,*:before,*:after{box-sizing:border-box;}
+
+          .boxmodel {
+            margin: 30px 0;
+            width: 80%;
+          }
+          .margin {
+            background: #f1f1f1;
+            padding: 45px;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border: 2px dashed #bbb;
+          }
+          .margin::before { 
+            content: 'Margin'; 
+            font-size: 1.4rem;
+            left: 0;
+            top: 1.8%;
+            width:100%; 
+            position: absolute;
+            text-align: center;
+            box-sizing: inherit;
+          }
+          .border {
+            background: #04AA6D;
+            padding: 45px;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            box-sizing: inherit;
+          }
+          .border::before { 
+            content: 'Border'; 
+            font-size: 1.4rem;
+            left: 0;
+            top: 2.5%;
+            width:100%; 
+            position: absolute;
+            text-align: center;
+            box-sizing: inherit;
+          }
+          .padding{
+            background: #f1f1f1;
+            padding: 45px;
+            width: 100%;
+            height: 100%;
+            position: relative;
+          }
+          .padding::before { 
+            content: "Padding";
+            font-size: 1.4em;
+            position: absolute;
+            left: 0.5%;
+            top: 3.7%;
+            width: 100%;
+            text-align: center;
+          }
+          .content{
+            background: white;
+            padding: 45px;
+            width: 100%;
+            height: 100%;
+            position: relative;
+          }
+          .content::before { 
+            content: "Content";
+            font-size: 1.4em;
+            position: absolute;
+            left: 0.5%;
+            top: 30%;
+            width: 100%;
+            text-align: center;
+          }
+
+        </style>
+        Explanation of the different parts:
+        <ul>
+          <li><strong>Content</strong> - The content of the box, where text and images appear</li>
+          <li><strong>Padding</strong> - Clears an area around the content. The padding is transparent</li>
+          <li><strong>Border</strong> - A border that goes around the padding and content</li>
+          <li><strong>Margin</strong> - Clears an area outside the border.</li>
+        </ul>
+        The box model allows us to add a border around elements, and to define space between elements.
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">Width and Height of an Element</h2>
+      </header>
+      <p>
+        In order to set the width and height of an element correctly in all browsers, you need to know how the box model works. 
+        <br><br>
+        <div class="TipBox"><strong>Important:</strong> When you set the width and height properties of an element with CSS, you just set the width and height of the <strong>content area</strong>. To calculate the full size of an element, you must also add padding, borders and margins.</div>
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>

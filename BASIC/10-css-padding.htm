@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CSS Padding</title>
+  <link href="/CSS/CSS/styles.css" rel="stylesheet">
+  <link href="/CSS/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(175, 175, 255);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">CSS Padding</a>
+      </li>
+      <li class="li">
+        <a href="#T2">Padding and Element Width</a>
+      </li>
+      <li class="li">
+        <a href="#T3">title3</a>
+      </li>
+      <li class="li">
+        <a href="#T4">title4</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/css/css_padding.asp">CSS Padding</a></h1>
+      </header>
+      <p>
+        Padding is used to create space around an element's content, inside of any defined borders. <br><br>
+        <div style="padding: 70px; border: 2px solid green;">This element has a padding of 70px.</div>
+        <br><br>
+        The CSS <span class="RedGray">padding</span> properties are used to generate space around an element's content, inside of any defined borders.
+        <br><br>
+        With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).
+        <br><br>
+        <strong>Tip:</strong> Negative values are not allowed.
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">Padding and Element Width</h2>
+      </header>
+      <p>
+        The CSS <span class="RedGray">width</span> property specifies the width of the element's content area. The content area is the portion inside the
+        padding, border, and margin of an element (the box model).
+        <br><br>
+        So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.
+        <br><br>
+        To keep the width at 300px, no matter the amount of padding, you can use the <span class="RedGray">box-sizing</span> property. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease.
+      </p>
+    </section><br><br>
+    
+  </main>
+</body>
+
+</html>
