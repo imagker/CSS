@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CSS Outline</title>
+  <link href="/CSS/CSS/styles.css" rel="stylesheet">
+  <link href="/CSS/images/favicon.ico" rel="shortcut icon">
+  <style>
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(175, 175, 255);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">CSS Outline</a>
+      </li>
+
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/css/css_outline.asp">CSS Outline</a></h1>
+      </header>
+      <p>
+        An outline is a line that is drwan around elements, OUTSIDE the borders, to make the element "stand out". 
+        <br><br>
+        Its similar to border attribute so you can use almost all of the border attrib.
+      </p>
+        <style>
+          * { box-sizing: border-box;}
+          
+          .Boxmodel {
+            margin: 30px 0;
+            width: 90vw;
+            height: 30vw;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+          }
+
+          .Outline {
+            width: 80vw;
+            height: 100%;
+            background: #04AA6D;
+            position: relative;
+            border: 2px dashed #bbb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .Outline::before {
+            content: 'Outline';
+            font-size: 2vw;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            left: 0%;
+            top: 0%;
+            
+          }
+
+          .Border {
+            width: 75%;
+            height: 75%;
+            background: #bbb;
+            position: relative;
+            border: 1px solid black;
+            display: inherit;
+            align-items: center;
+            justify-content: center;
+          }
+          .Border::before {
+            content: 'Border';
+            font-size: 2vw;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            left: 0%;
+            top: 1.8%;
+          }
+
+          .Content {
+            width: 60%;
+            height: 60%;
+            /* padding: 45px; */
+            background: white;
+            position: relative;
+            border: 1px solid black;
+          }
+          .Content::before {
+            content: 'Content';
+            font-size: 2vw;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            left: 0%;
+            top: 1.8%;
+          }
+          
+        </style>
+        <div class="Boxmodel">
+          <div class="Outline">
+            <div class="Border">
+              <div class="Content"></div>
+            </div>
+          </div>
+        </div>
+    </section><br><br>
+   
+  </main>
+</body>
+
+</html>

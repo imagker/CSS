@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CSS Text</title>
+  <link href="/CSS/CSS/styles.css" rel="stylesheet">
+  <link href="/CSS/images/favicon.ico" rel="shortcut icon">
+  <style>
+
+    .ul {
+      font-size: 10pt;
+      list-style-type: none;
+      margin: 00;
+      padding: 00;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    .li {
+      float: left;
+    }
+
+    .li a {
+      display: block;
+      color: rgb(175, 175, 255);
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 3em;
+      padding-right: 3em;
+      text-decoration: none;
+    }
+
+    .li a:hover {
+      background-color: whitesmoke;
+    }
+
+    @media screen and (max-width: 800px) {
+      .li {
+        width: 50%;
+        /* The width is 100%, when the viewport is 800px or smaller */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="ul">
+      <li class="li">
+        <a href="#T1">CSS Text</a>
+      </li>
+      <li class="li">
+        <a href="#T2">Text Align</a>
+      </li>
+      <li class="li">
+        <a href="#T3">CSS Text Transformation</a>
+      </li>
+      <li class="li">
+        <a href="#T4">CSS Text Spacing</a>
+      </li>
+      <li class="li">
+        <a href="#T5">title4</a>
+      </li>
+    </ul>
+  </nav><br>
+  <main>
+    <section>
+      <header>
+        <h1 id="T1"><a href="https://www.w3schools.com/css/css_text.asp">CSS Text</a></h1>
+      </header>
+      <p>CSS has a lot of properties for formatting text.</p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T2">Text Alignment</h2>
+      </header>
+      <p>
+        The text-align property is used to set the horizontal alignment of a text.
+        <br><br>
+        A text can be left or right aligned, centered, or justified.
+        <br><br>
+        The <span class="RedGray">direction</span> property specifies how to align the last line of a text. it also uses same attrib as text-align property.
+        <br><br>
+        The <span class="RedGray">unicode-bidi</span> and <span class="RedGray">text-align-last</span> properties can be used to change the text direction of an element:
+        <pre class="EX" style="width: 30vw;">
+  p {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+        </pre>
+        <br><br>
+        The <span class="RedGray">vertical-align</span> property sets the vertical alignment of an element. 
+        <br><br>
+        <pre class="EX" style="width: 30vw;">
+  img.a {
+  vertical-align: baseline;
+  }
+  this is default setting
+
+  img.b {
+  vertical-align: text-top;
+  }
+
+  img.c {
+  vertical-align: text-bottom;
+  }
+
+  img.d {
+  vertical-align: sub;
+  }
+
+  img.e {
+  vertical-align: super;
+  }
+                </pre>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T3">CSS Text Transformation</h2>
+      </header>
+      <p>
+        The <span class="RedGray">text-transform</span> property is used to specify uppercase and lowercase letters in a text.
+        <br><br>
+        It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word
+        <pre class="EX" style="width: 30vw;">
+  p.uppercase {
+  text-transform: uppercase;
+  }
+
+  p.lowercase {
+  text-transform: lowercase;
+  }
+
+  p.capitalize {
+  text-transform: capitalize;
+  }
+        </pre>
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T4">CSS Text Spacing</h2>
+      </header>
+      <p>
+        The <span class="RedGray">text-indent</span> property is used to specify the indentation of the first line of a text:
+        <br><br>
+        <span class="RedGray"> </span>
+        The <span class="RedGray">letter-spacing</span> property is used to specify the space between the characters in a text.
+        <br><br>
+        The <span class="RedGray">line-height</span> property is used to specify the space between lines:
+        <br><br>
+        The <span class="RedGray">word-spacing</span> property is used to specify the space between the words in a text.
+        <br><br>
+        The <span class="RedGray">white-space</span> property specifies how white-space inside an element is handled. 
+      </p>
+    </section><br><br>
+    <section>
+      <header>
+        <h2 id="T5">CSS Text Shadow</h2>
+      </header>
+      <p style="color: #bbb; text-shadow: 2px 2px 5px rgb(155, 189, 252); font-size: 2rem;">
+        Text-Shadow ! WOW WHAT A USEFUL CODE !!!
+      </p>
+    </section>
+  </main>
+</body>
+
+</html>
